@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--color-purple: #7000ff;
+}
+.container {
+	width: 80%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.do-sans {
+	font-family: 'DM Sans', sans-serif;
+}
+.roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Scrollbar'ni yupqa qilish */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+/* Scroll yo‘li (orqa fon) */
+::-webkit-scrollbar-track {
+	background: #f3e8ff; /* purple-100 */
+}
+
+/* Scroll tutqichi (harakatlanuvchi qismi) */
+::-webkit-scrollbar-thumb {
+	background-color: #a855f7; /* purple-500 */
+	border-radius: 10px;
+	border: 2px solid #f3e8ff;
+}
+
+/* Hover effekti (ixtiyoriy) */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #9333ea; /* purple-600 */
+}
