@@ -12,13 +12,15 @@ export const counterSlice = createSlice({
 	name: 'counter',
 	initialState,
 	reducers: {
-		setSelectedProduct: (state, action: PayloadAction<CounterState>) =>
-			action.payload,
-		clearSelectedProduct: () => null,
+		setSelectedProduct: (state, action: PayloadAction<number>) => {
+			state.value = action.payload
+		},
+		clearSelectedProduct: state => {
+			state.value = 0
+		},
 	},
 })
 
-// Action creators are generated for each case reducer function
 export const { setSelectedProduct, clearSelectedProduct } = counterSlice.actions
 
 export default counterSlice.reducer

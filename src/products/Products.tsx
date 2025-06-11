@@ -59,7 +59,7 @@ const Products = () => {
 	const handleLoadMore = () => {
 		setSkip(prev => prev + limit)
 	}
-	const handeId = async (item: Number) => {
+	const handeId = async (item: number) => {
 		console.log(item)
 		dispatch(setSelectedProduct(item))
 		navigate(`/product-details/${item}`)
