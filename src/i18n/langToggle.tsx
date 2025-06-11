@@ -11,7 +11,7 @@ const languages = [
 ]
 
 const customStyles = {
-	control: (base: any, state: any) => ({
+	control: (base: any) => ({
 		...base,
 		backgroundColor: 'transparent',
 		border: 'none',
