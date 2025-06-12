@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom'
+import Footer from './layout/footer'
 import MobileNavbar from './layout/MobileNavbar'
 import Navbar from './layout/navbar'
 import NavbarBottom from './layout/navbarBottom'
@@ -12,6 +13,7 @@ function App() {
 			<Navbar />
 			<NavbarBottom />
 			<Outlet />
+			<Footer />
 		</div>
 	)
 }
